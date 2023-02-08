@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="example-parent">
+        <div class="example-origin">
+            Hacer
+            <div
+                id="draggable-1"
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+            >
+                cosa 1
+            </div>
+            <div
+                id="draggable-2"
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+            >
+                cosa 2
+            </div>
+            <div
+                id="draggable-3"
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+            >
+                cosa 3
+            </div>
+            <div
+                id="draggable-4"
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+            >
+                cosa 4
+            </div>
+        </div>
+
+        <div
+            class="example-dropzone"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+        >
+            Hecho!
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
